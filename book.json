@@ -1,0 +1,37 @@
+{
+    "styles": {
+        "website": "styles/website.css"
+     },
+    "plugins": ["search", "theme-api", "-sharing", "toggle-chapters", "scripts",
+                "-highlight", "sunlight-highlighter"],
+    "pluginsConfig": {
+        "theme-api": {
+            "theme": "dark",
+            "languages": [
+                {
+                    "lang": "js",
+                    "name": "JavaScript",
+                    "default": true
+                },
+                {
+                    "lang": "go",
+                    "name": "Go"
+                },
+                {
+                    "lang": "http",
+                    "name": "curl"
+                }
+            ],
+            "split": true
+        },
+        "scripts": {
+            "files": [
+                "./scripts/website.js"
+            ]
+        },
+        "sunlight-highlighter": {
+            "theme": "dark",
+            "lineNumbers": false
+        }
+    }
+}
